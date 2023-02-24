@@ -7,7 +7,8 @@
 header,
 section h2,
 section h3,
-form button {
+form button,
+.jogosNov p {
     font-family: 'Bungee', cursive;
     font-weight: normal;
 }
@@ -40,14 +41,15 @@ header nav li a {
 }
 
 header .container,
-section.container {
+section .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .brands-list img {
-    height: 24px;
+    height: 36px;
+    margin-right: 22px;
 }
 
 .brands-list li {
@@ -76,16 +78,16 @@ section p {
 }
 
 .store-front {
-    margin-right: 32px;
+    margin-right: 13px;
 }
 
 .social-links img {
-    height: 24px;
+    height: 32px;
 }
 
 .social-links li {
     display: inline;
-    margin-right: 8px;
+    margin-right: 36px;
 }
 
 .social-links li a {
@@ -138,4 +140,42 @@ footer {
     background-color: #182c61;
     color: #ecf0f1;
     padding: 16px 0;
+}
+
+container {
+    padding: 50px;
+}
+
+.box {
+display: grid;
+grid-gap: 20px;
+grid-template-columns: repeat(6, minmax(100px, 1fr));
+}
+
+.box a {
+transition: transform .3s;  
+}
+
+.box a:hover {
+transition: transform .3s;
+-ms-transform: scale(1.4);
+-webkit-transform: scale(1.4);  
+transform: scale(1.4);
+}
+
+.box img {
+border-radius: 2px;
+}
+
+img {
+max-width: 100%;
+}
+
+h1 {
+padding-top: 60px;  
+}
+
+.wrapper {
+margin: 0;
+padding: 0;
 }
